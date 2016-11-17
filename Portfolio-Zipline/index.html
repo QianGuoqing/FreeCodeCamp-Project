@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
         }
-        body, html, #first, #second, #last {
+        body, html, #first, #second, #third, #last {
             width: 100%;
             height: 100%;
         }
@@ -27,6 +27,10 @@
             background: url("bg3.jpg") no-repeat;
             background-size: cover;
         }
+        #third {
+            background: url("bg4.jpg") no-repeat;
+            background-size: cover;
+        }
         #last {
             background: url("bg2.jpg") no-repeat;
             background-size: cover;
@@ -39,7 +43,7 @@
             clear: both;
         }
         .container {
-            width: 90%;
+            width: 1000px;
             margin: 0 auto;
         }
         .navigate {
@@ -125,7 +129,7 @@
         }
 
         .last-contact-info {
-            margin-top: 100px;
+            padding-top: 100px;
             color: #fff;
             font-size: 28px;
             font-weight: bold;
@@ -192,6 +196,83 @@
             border-radius: 50%;
             margin: 90px 0 0 50px;
         }
+        #third .third-title {
+            font-size: 30px;
+            text-align: center;
+            color: black;
+            font-family: Courier;
+            font-weight: bold;
+            padding-top: 90px;
+        }
+        #third .third-sub-title {
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            font-family: Courier;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+        #third .third-project-list {
+            margin-top: 30px;
+        }
+        #third .third-project-list .item {
+            width: 300px;
+            border: 1px solid #ccc;
+        }
+        #third .third-project-list .item .item-img,
+        #third .third-project-list .item .item-img img {
+            width: 280px;
+            height: 180px;
+            margin: 0 auto;
+            border-bottom: 1px solid black;
+            box-shadow: 1px 1px 2px black;
+        }
+        #third .item:hover {
+            box-shadow: 5px 5px 5px black;
+            transition: all 0.5s;
+        }
+        #third .third-project-list .item .item-img {
+            position: relative;
+        }
+        #third .third-project-list .item .item-img-hover {
+            width: 280px;
+            height: 180px;
+            background: rgba(204, 204, 204, 0.4);
+            position: absolute;
+            top: 0;
+            text-align: center;
+            line-height: 180px;
+            font-size: 50px;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+
+        #third .third-project-list .item .item-img-hover:hover {
+            opacity: 1;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        #third .item .item-title,
+        #third .item .item-sub-title {
+            font-family: "Chalkboard SE";
+            color: #fff;
+            text-align: center;
+            background: black;
+            width: 280px;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        #third .item .item-sub-title {
+            font-size: 13px;
+        }
+        #third .third-project-list {
+            margin-right: -40px;
+        }
+        #third .third-project-list li {
+            float: left;
+            margin-right: 40px;
+        }
+
     </style>
 </head>
 <body>
@@ -276,6 +357,78 @@
         </div>
     </div>
 </div>
+<div id="third">
+<div class="container">
+    <div class="third-title">
+        Awesomeness Portfolio.
+    </div>
+    <div class="third-sub-title">
+        Below you'll find some of my recent work.
+    </div>
+    <ul class="third-project-list clear">
+        <li>
+            <div class="item">
+                <div class="item-img">
+                    <a href="#">
+                        <img src="pro1.png" alt="project1">
+                    </a>
+                    <a href="#">
+                        <div class="item-img-hover">
+                            <i class="fa fa-fire fa-fw"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-title">
+                    Twitch.tv API project
+                </div>
+                <div class="item-sub-title">
+                    Bootstrap and Angularjs
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="item-img">
+                    <a href="#">
+                        <img src="pro2.png" alt="project2">
+                    </a>
+                    <a href="#">
+                        <div class="item-img-hover">
+                            <i class="fa fa-fire fa-fw"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-title">
+                    Wikipedia Search Engine
+                </div>
+                <div class="item-sub-title">
+                    Bootstrap and jQuery
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="item-img">
+                    <a href="#">
+                        <img src="pro3.png" alt="project3">
+                    </a>
+                    <a href="#">
+                        <div class="item-img-hover">
+                            <i class="fa fa-fire fa-fw"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-title">
+                    Stainless Steel Calculator
+                </div>
+                <div class="item-sub-title">
+                    SCSS and Vanilla Javascript
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
 <div id="last">
 <div class="container">
     <div class="last-contact-info">
@@ -341,5 +494,14 @@
         </div>
     </div>
 </div>
+
+<script src="jquery-1.11.1.js"></script>
+<script>
+//    $('.item-img').on('mouseover', function () {
+//        $(this).find('.item-img-hover').addClass('active');
+//    }).on('mouseout', function () {
+//        $(this).find('.item-img-hover').removeClass('active');
+//    })
+</script>
 </body>
 </html>
