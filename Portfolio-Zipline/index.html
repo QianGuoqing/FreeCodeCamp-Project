@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Protfolio Zipline</title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+    <style>
+        body, html, div, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        body, html, #first, #second, #last {
+            width: 100%;
+            height: 100%;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        #first {
+            background: url("bg1.jpg") no-repeat;
+            background-size: cover;
+        }
+        #second {
+            background: url("bg3.jpg") no-repeat;
+            background-size: cover;
+        }
+        #last {
+            background: url("bg2.jpg") no-repeat;
+            background-size: cover;
+        }
+        .clear:after {
+            width: 0;
+            height: 0;
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .navigate {
+            background: rgba(128, 128, 128, 0.3);
+        }
+        .navi-index {
+            margin-left: 10px;
+            padding: 10px 25px;
+            background: rgba(128, 128, 128, 0.5);
+            width: 150px;
+            text-align: center;
+            float: left;
+        }
+        .navi-index a,
+        .navi-list li a {
+            font-family: Courier;
+            color: black;
+            font-weight: bolder;
+        }
+        .navi-index:hover,
+        .navi-list li:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .navi-list {
+            float: right;
+        }
+
+        .navi-list li {
+            float: left;
+            padding: 10px 15px;
+            background: rgba(128, 128, 128, 0.5);
+        }
+
+        .first-title {
+            font-size: 50px;
+            text-align: center;
+            margin-top: 90px;
+            font-weight: bold;
+            font-family: Courier;
+            color: rgba(0, 0, 0, 0.4);
+        }
+        .first-sub-title {
+            font-size: 25px;
+            text-align: center;
+            font-family: Chalkboard;
+            text-shadow: 2px 3px 2px #666;
+            margin-top: 10px;
+        }
+
+        .first-contact {
+            position: relative;
+        }
+        .contact-list {
+            position: absolute;
+            left: 40%;
+            transform: translateX(-30%);
+        }
+
+        .contact-list li {
+            float: left;
+            margin: 100px 10px;
+            /*text-align: center;*/
+        }
+        .contact-list li a:hover,
+        #last .last-contact-list a:hover{
+            background: black;
+            color: white;
+            padding: 16px 20px;
+            transition: all 0.2s;
+        }
+        .contact-list li a,
+        #last .last-contact-list li a{
+            box-shadow: 2px 2px 2px #666;
+            border: 2px solid black;
+            border-radius: 4px;
+            padding: 13px 17px;
+            font-family: Courier;
+            color: black;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px #666;
+            background: #ccc;
+        }
+
+        .last-contact-info {
+            margin-top: 100px;
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: Courier;
+            text-shadow: 2px 2px 2px #ccc;
+        }
+        .last-contact-email {
+            margin-top: 20px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Courier;
+            text-shadow: 2px 2px 2px #ccc;
+        }
+
+        #last .last-contact-list li {
+            margin-top: 50px;
+        }
+
+        #footer {
+            background: #ccc;
+        }
+        #footer .footer-list li {
+            float: left;
+            padding: 30px 20px 10px 0;
+        }
+        #footer .footer-list li a {
+            color: dodgerblue;
+            font-family: Courier;
+        }
+        #footer .footer-list li a:hover {
+            color: midnightblue;
+            text-decoration: underline;
+        }
+
+        #footer .footer-copyright {
+            color: #666666;
+            font-size: 14px;
+            font-family: Chalkboard;
+            margin: 10px 0 30px 0;
+        }
+        #second .left-container,
+        #second .right-container{
+            width: 50%;
+            float: left;
+        }
+        #second .second-title {
+            font-size: 30px;
+            color: white;
+            margin-top: 90px;
+            font-family: "Chalkboard SE"
+        }
+        #second .second-description {
+            font-size: 20px;
+            color: white;
+            margin-top: 20px;
+            font-family: "Chalkboard SE";
+        }
+
+        #second .right-container img {
+            width: 150px;
+            height: 150px;
+            border: 3px solid white;
+            border-radius: 50%;
+            margin: 90px 0 0 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="first">
+    <div class="container">
+        <div class="navigate clear">
+            <div class="navi-index">
+                <a href="#">Thiago Ferreira</a>
+            </div>
+            <ul class="navi-list clear">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="first-title">
+        Infinito Web Design Studio
+    </div>
+    <div class="first-sub-title">
+        Where Awesomeness Is Brought To Life.
+    </div>
+    <div class="first-contact">
+        <ul class="contact-list clear">
+            <li>
+                <a target="_blank" href="https://twitter.com/">
+                    <i class="fa fa-twitter fa-fw"></i>
+                    Twitter
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/" target="_blank">
+                    <i class="fa fa-github fa-fw"></i>
+                    Github
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fa fa-linkedin fa-fw"></i>
+                    Linkedin
+                </a>
+            </li>
+            <li>
+                <a href="http://www.freecodecamp.com">
+                    <i class="fa fa-fire fa-fw"></i>
+                    FreeCodeCamp
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="second">
+    <div class="container clear">
+        <div class="left-container">
+            <div class="second-title">
+                Infinito Web Design Studio.
+            </div>
+            <div class="second-description">
+                I'm a self taught web designer, developer, co-founder and entrepreneur based in Finland.
+                I'm currently part of a small web development team in an upcoming start-up, building web and mobile applications.
+                My passion is to use technology based solutions, to help solve real world challenges.
+                Competences:
+                Languages and Frameworks:
+                Javascript, HTML5, CSS3, jQuery, Bootstrap3, Angular.js, Meteor.js.
+                Tools & expertise:
+                Git, Responsive Web Design, Agile Methodologies.
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="second-head-img">
+                <img src="9.jpg" alt="head">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="last">
+<div class="container">
+    <div class="last-contact-info">
+        Connect with me by following:
+    </div>
+    <div class="last-contact-email">
+        qian_guoqing@yeah.net
+    </div>
+    <ul class="last-contact-list">
+        <li>
+            <a href="https://www.twitter.com">
+                <i class="fa fa-twitter fa-fw"></i>
+                Twitter
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/" target="_blank">
+                <i class="fa fa-github fa-fw"></i>
+                Github
+            </a>
+        </li>
+        <li>
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fa fa-linkedin fa-fw"></i>
+                Linkedin
+            </a>
+        </li>
+        <li>
+            <a href="http://www.freecodecamp.com">
+                <i class="fa fa-fire fa-fw"></i>
+                FreeCodeCamp
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+<div id="footer">
+    <div class="container">
+        <ul class="footer-list clear">
+            <li>
+                <a href="#">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Portfolio
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Contact
+                </a>
+            </li>
+        </ul>
+        <div class="footer-copyright">
+            Copyright &copy; QianGuoqing 2016. All Rights Reserved
+        </div>
+    </div>
+</div>
+</body>
+</html>
