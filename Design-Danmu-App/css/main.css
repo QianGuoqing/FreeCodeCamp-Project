@@ -1,0 +1,29 @@
+.container {
+    width: 900px;
+    height: 500px;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+.container .title {
+    text-align: center;
+    padding: 10px;
+}
+.danmu-section {
+    border: 1px solid palevioletred;
+    box-shadow: 2px 2px 2px red;
+    width: 800px;
+    height: 400px;
+    margin: 0px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.function-section {
+    box-sizing: border-box;
+    width: 800px;
+    margin: 10px auto;
+    border: 1px solid dodgerblue;
+    box-shadow: 2px 2px 2px skyblue;
+    padding: 10px;
+    text-align: center;
+}
