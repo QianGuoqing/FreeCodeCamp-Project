@@ -36,11 +36,11 @@ $btnSend.on('click', function () {
 
     setInterval(function () {
         $sendBlock.animate({
-            left: "-=" + $textSpeed.val()*5 + "px"
-        }, 500, function () {
+            right: "+=" + $textSpeed.val()*5 + "px"
+        }, 1000, 'linear', function () {
             var sendLeft = $sendBlock.position().left;
             if (sendLeft < 0) {
-                $(this).remove(1000);
+                $(this).remove();
             }
         });
     }, 0);
